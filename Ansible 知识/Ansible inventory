@@ -40,4 +40,17 @@ root@control RHCE-ANSIBLE]# ansible -i inventory sv --list-host
   hosts (1):
     centossv
 
+[root@control RHCE-ANSIBLE]# ansible -i inventory all --list-host  -------- ansible all 命令查看所有主机
+  hosts (10):
+    webservera
+    webserverb
+    webserverc
+    webserverd
+    webservere
+    mysqlservera
+    mysqlserverb
+    centossv
+    nlbservera
+    nlbserverb
+
 
