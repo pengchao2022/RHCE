@@ -16,6 +16,13 @@ Ansible 有三大文件：
 
                                           all ------- all 主机组含有清单中明确列出的每一台主机
                                           ungrouped -------- 主机组含有清单中明确列出，但不属于任何其他任何组的每一个主机
+                        默认情况下 ansible 的清单文件 和配置文件都在 /etc/ansible 文件夹里
+
+                        [root@control ansible]# ls
+                        ansible.cfg  hosts  roles
+                        [root@control ansible]# pwd
+                        /etc/ansible
+
 
                ------  通常都是自己建立 自定的 主机清单文件 一般名字叫 inventory
                         
