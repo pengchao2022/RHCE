@@ -1,0 +1,43 @@
+创建自定义的 ansible 主机清单 inventory:
+
+[root@control RHCE-ANSIBLE]# vim inventory 
+
+[root@control RHCE-ANSIBLE]# cat inventory 
+[web]
+webservera
+webserverb
+webserverc
+
+[db]
+mysqlservera
+mysqlserverb
+
+[nlb]
+nlbservera
+nlbserverb
+
+[sv]
+centossv
+
+查看 group 里面的主机名：
+[root@control RHCE-ANSIBLE]# ansible -i inventory web --list-host
+  hosts (3):
+    webservera
+    webserverb
+    webserverc
+
+[root@control RHCE-ANSIBLE]# ansible -i inventory db --list-host
+  hosts (2):
+    mysqlservera
+    mysqlserverb
+
+[root@control RHCE-ANSIBLE]# ansible -i inventory nlb --list-host
+  hosts (2):
+    nlbservera
+    nlbserverb
+
+root@control RHCE-ANSIBLE]# ansible -i inventory sv --list-host
+  hosts (1):
+    centossv
+
+
