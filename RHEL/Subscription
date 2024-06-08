@@ -1,0 +1,44 @@
+
+You need to subscript redhat linux in order to use yum ...
+
+ 
+
+step:
+
+ 
+
+1， [root@localhost ~]# subscription-manager register
+
+ 
+
+2, type your redhat developer account and password
+
+   Username: pengchao.ma2@outlook.com
+
+   Password: **********
+
+ 
+
+3, [root@localhost ~]# subscription-manager attach --auto
+
+ 
+
+4, check your subscription
+
+   [root@localhost ~]# subscription-manager status
+
+ 
+
+5, run yum update -y
+
+ 
+
+   [root@localhost ~]# yum update -y
+
+ 
+
+done!
+
+ 
+
+ 
